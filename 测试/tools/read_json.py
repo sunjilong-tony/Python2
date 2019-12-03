@@ -15,6 +15,21 @@ class Read_Json(object):
             # print(data)
             return data
 
+
+# path = Read_Json("meeting_list.json").read_json()
+# with open("e:/python2/测试/data/token.txt", "r") as f:
+#     token = f.read()
+# token = path.get("headers").setdefault("token", token)
+# arr = []
+# for data in path.values():
+#     arr.append((
+#         path.get("url"),
+#         path.get("data"),
+#         path.get("headers")
+#     ))
+# print(arr)
+
+
 # if __name__ == '__main__':
 #     datas = Read_Json("login.json").read_json()
 #     arr = []
@@ -25,5 +40,28 @@ class Read_Json(object):
 #                     data.get("code"),
 #                     data.get("msg")))
 #         print(arr)
+# #
 
+
+
+"""
+   # url = "https://vzhapi.tamiyun.com/robotadmin/tm/admin/meeting/c2mGetAllMeeting"
+        # data = {
+        #     "createEndTime": "",
+        #     "createStartTime": "",
+        #     "curPage": 1,
+        #     "employeeId": 22,
+        #     "endTime": "",
+        #     "feeType": "null",
+        #     "isVzh": -1,
+        #     "pageSize": 10,
+        #     "rocessId": "null",
+        #     "startTime": ""}
+        # headers = {
+        #     "Content-Type": "application/json",
+        #     "token": "f7b8affca1e54dbd960e7ec9a3bd2ead",
+        #     "User-Agent": "Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like"
+        #                   " Gecko) Chrome/76.0.3809.100 Safari/537.36"
+        #             }
+"""
 

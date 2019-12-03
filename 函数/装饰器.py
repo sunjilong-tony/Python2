@@ -62,23 +62,23 @@ def f(x):
 
 f(20)
 
-import time
-def retry(count, wait=0):
-    def wrapper(f):
-        def inner(*args, **kwargs):
-            for i in range(count):
-                try:
-                    f(*args, **kwargs)
-                except Exception as error:
-                    time.sleep(wait)
-                    continue
-                else:
-                    return f
-        return inner
-    return wrapper
-
-
-def decorator(count,wait=0):
-    def wapper(f):
-       pass
-    return wapper
+# import time
+# def retry(count, wait=0):
+#     def wrapper(f):
+#         def inner(*args, **kwargs):
+#             for i in range(count):
+#                 try:
+#                     f(*args, **kwargs)
+#                 except Exception as error:
+#                     time.sleep(wait)
+#                     continue
+#                 else:
+#                     return f
+#         return inner
+#     return wrapper
+#
+#
+# def decorator(count,wait=0):
+#     def wapper(f):
+#        pass
+#     return wapper

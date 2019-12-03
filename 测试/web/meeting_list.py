@@ -9,7 +9,6 @@ class Meeting_List(object):
 
 
     def meeting_list(self, url, data, headers):
-
         return requests.post(url=url, json=data, headers=headers)
 
     """

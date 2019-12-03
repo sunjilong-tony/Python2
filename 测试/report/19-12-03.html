@@ -189,9 +189,9 @@ function showOutput(id, name) {
 
 <div class='heading'>
 <h1>测试报告</h1>
-<p class='attribute'><strong>Start Time:</strong> 2019-11-27 08:47:57</p>
-<p class='attribute'><strong>Duration:</strong> 0:00:01.076769</p>
-<p class='attribute'><strong>Status:</strong> Pass 2</p>
+<p class='attribute'><strong>Start Time:</strong> 2019-12-03 16:18:42</p>
+<p class='attribute'><strong>Duration:</strong> 0:00:02.175087</p>
+<p class='attribute'><strong>Status:</strong> Pass 1 Failure 3</p>
 
 <p class='description'></p>
 </div>
@@ -235,25 +235,128 @@ function showOutput(id, name) {
     <td colspan='5' align='center'>pass</td>
 </tr>
 
-<tr class='passClass'>
+<tr class='failClass'>
     <td>test_meeting_list.Test_meeting_list</td>
-    <td>1</td>
-    <td>1</td>
+    <td>3</td>
     <td>0</td>
+    <td>3</td>
     <td>0</td>
-    <td><a href="javascript:showClassDetail('c2',1)">Detail</a></td>
+    <td><a href="javascript:showClassDetail('c2',3)">Detail</a></td>
 </tr>
 
-<tr id='pt2.1' class='hiddenRow'>
-    <td class='none'><div class='testcase'>test_list</div></td>
-    <td colspan='5' align='center'>pass</td>
+<tr id='ft2.1' class='none'>
+    <td class='failCase'><div class='testcase'>test_list_0_https_vzhapi_tamiyun_com_robotadmin_tm_admin_meeting_c2mGetAllMeeting</div></td>
+    <td colspan='5' align='center'>
+
+    <!--css div popup start-->
+    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_ft2.1')" >
+        fail</a>
+
+    <div id='div_ft2.1' class="popup_window">
+        <div style='text-align: right; color:red;cursor:pointer'>
+        <a onfocus='this.blur();' onclick="document.getElementById('div_ft2.1').style.display = 'none' " >
+           [x]</a>
+        </div>
+        <pre>
+        
+ft2.1: Traceback (most recent call last):
+  File "C:\Python35\lib\site-packages\parameterized\parameterized.py", line 518, in standalone_func
+    return func(*(a + p.args), **p.kwargs)
+  File "e:\python2\测试\main\test_meeting_list.py", line 29, in test_list
+    self.assertEqual(300, re.status_code)
+AssertionError: 300 != 200
+Traceback (most recent call last):
+  File "C:\Python35\lib\site-packages\parameterized\parameterized.py", line 518, in standalone_func
+    return func(*(a + p.args), **p.kwargs)
+  File "e:\python2\测试\main\test_meeting_list.py", line 29, in test_list
+    self.assertEqual(300, re.status_code)
+AssertionError: 300 != 200
+
+
+        </pre>
+    </div>
+    <!--css div popup end-->
+
+    </td>
+</tr>
+
+<tr id='ft2.2' class='none'>
+    <td class='failCase'><div class='testcase'>test_list_1_https_vzhapi_tamiyun_com_robotadmin_tm_admin_meeting_c2mGetAllMeeting</div></td>
+    <td colspan='5' align='center'>
+
+    <!--css div popup start-->
+    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_ft2.2')" >
+        fail</a>
+
+    <div id='div_ft2.2' class="popup_window">
+        <div style='text-align: right; color:red;cursor:pointer'>
+        <a onfocus='this.blur();' onclick="document.getElementById('div_ft2.2').style.display = 'none' " >
+           [x]</a>
+        </div>
+        <pre>
+        
+ft2.2: Traceback (most recent call last):
+  File "C:\Python35\lib\site-packages\parameterized\parameterized.py", line 518, in standalone_func
+    return func(*(a + p.args), **p.kwargs)
+  File "e:\python2\测试\main\test_meeting_list.py", line 29, in test_list
+    self.assertEqual(300, re.status_code)
+AssertionError: 300 != 200
+Traceback (most recent call last):
+  File "C:\Python35\lib\site-packages\parameterized\parameterized.py", line 518, in standalone_func
+    return func(*(a + p.args), **p.kwargs)
+  File "e:\python2\测试\main\test_meeting_list.py", line 29, in test_list
+    self.assertEqual(300, re.status_code)
+AssertionError: 300 != 200
+
+
+        </pre>
+    </div>
+    <!--css div popup end-->
+
+    </td>
+</tr>
+
+<tr id='ft2.3' class='none'>
+    <td class='failCase'><div class='testcase'>test_list_2_https_vzhapi_tamiyun_com_robotadmin_tm_admin_meeting_c2mGetAllMeeting</div></td>
+    <td colspan='5' align='center'>
+
+    <!--css div popup start-->
+    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_ft2.3')" >
+        fail</a>
+
+    <div id='div_ft2.3' class="popup_window">
+        <div style='text-align: right; color:red;cursor:pointer'>
+        <a onfocus='this.blur();' onclick="document.getElementById('div_ft2.3').style.display = 'none' " >
+           [x]</a>
+        </div>
+        <pre>
+        
+ft2.3: Traceback (most recent call last):
+  File "C:\Python35\lib\site-packages\parameterized\parameterized.py", line 518, in standalone_func
+    return func(*(a + p.args), **p.kwargs)
+  File "e:\python2\测试\main\test_meeting_list.py", line 29, in test_list
+    self.assertEqual(300, re.status_code)
+AssertionError: 300 != 200
+Traceback (most recent call last):
+  File "C:\Python35\lib\site-packages\parameterized\parameterized.py", line 518, in standalone_func
+    return func(*(a + p.args), **p.kwargs)
+  File "e:\python2\测试\main\test_meeting_list.py", line 29, in test_list
+    self.assertEqual(300, re.status_code)
+AssertionError: 300 != 200
+
+
+        </pre>
+    </div>
+    <!--css div popup end-->
+
+    </td>
 </tr>
 
 <tr id='total_row'>
     <td>Total</td>
-    <td>2</td>
-    <td>2</td>
-    <td>0</td>
+    <td>4</td>
+    <td>1</td>
+    <td>3</td>
     <td>0</td>
     <td>&nbsp;</td>
 </tr>
