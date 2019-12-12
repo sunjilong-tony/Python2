@@ -50,6 +50,7 @@ def decorator_b(func):
     def inner_b(*args, **kwargs):
         print('Get in inner_b')
         return func(*args, **kwargs)
+    print("bbbbbbbbbb")
     return inner_b
 
 

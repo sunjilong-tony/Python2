@@ -16,7 +16,7 @@ def get_data():
                     data.get("password"),
                     data.get("code"),
                     data.get("msg")))
-        return arr
+    return arr
 
 
 class Test_login(unittest.TestCase):
@@ -31,3 +31,4 @@ class Test_login(unittest.TestCase):
 
 if __name__ == '__main__':
     unittest.main()
+
